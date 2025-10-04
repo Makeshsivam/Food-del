@@ -7,7 +7,7 @@ import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 
 const App = () => {
-  const url="https://food-del-backend-1yqm.onrender.com/";
+  const url="https://food-del-backend-1yqm.onrender.com";
   return (
     <div>
       <Navbar />
