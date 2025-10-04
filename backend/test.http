@@ -1,0 +1,25 @@
+POST http://localhost:4000/api/food/add
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="name"
+
+test
+--MyBoundary
+Content-Disposition: form-data; name="description"
+
+desc test
+--MyBoundary
+Content-Disposition: form-data; name="price"
+
+10
+--MyBoundary
+Content-Disposition: form-data; name="category"
+
+veg
+--MyBoundary
+Content-Disposition: form-data; name="image"; filename="food_5.png"
+Content-Type: image/png
+
+< ./uploads/food_5.png
+--MyBoundary--
